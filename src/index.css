@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@theme {
+  --breakpoint-xs: 26rem;
+
+  --font-serif: "Fraunces", "Georgia", serif;
+  --font-sans: "Manrope", "Helvetica Neue", Arial, sans-serif;
+
+  --color-forest: #1e2d24;
+  --color-forest-light: #2a3f32;
+  --color-forest-dark: #141f19;
+
+  --color-cream: #f5f2eb;
+  --color-cream-dark: #ece6d8;
+
+  --color-gold: #c59b27;
+  --color-gold-light: #d9b95a;
+  --color-gold-dark: #9c7a1e;
+
+  --color-wood-50: #faf6f0;
+  --color-wood-100: #f1e7da;
+  --color-wood-200: #e4d5c0;
+  --color-wood-300: #d0b998;
+  --color-wood-400: #b6976e;
+  --color-wood-500: #9c7b58;
+  --color-wood-600: #7c6146;
+
+  --shadow-soft: 0 2px 8px rgba(30, 45, 36, 0.06), 0 8px 24px rgba(30, 45, 36, 0.06);
+  --shadow-soft-lg: 0 8px 24px rgba(30, 45, 36, 0.08), 0 20px 48px rgba(30, 45, 36, 0.1);
+
+  --animate-fade-in: fade-in 0.6s ease-out both;
+  --animate-fade-in-up: fade-in-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-scale-in: scale-in 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-forest);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-gold);
+    color: var(--color-forest-dark);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer utilities {
+  .glass {
+    background-color: rgba(245, 242, 235, 0.72);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+  }
+
+  .glass-dark {
+    background-color: rgba(30, 45, 36, 0.75);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

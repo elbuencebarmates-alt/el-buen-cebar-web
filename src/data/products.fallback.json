@@ -1,0 +1,421 @@
+[
+  {
+    "id": "1",
+    "categoria": "mates",
+    "nombre": "Mate Ranchero Algarrobo",
+    "precio": 35000,
+    "descripcion_corta": "Mate artesanal de algarrobo con guarda de cuero blanco y marrón.",
+    "descripcion_larga": "Mate tallado en algarrobo macizo con guarda de cuero bicolor blanco y marrón. Pieza única de estilo rústico.",
+    "imagen": "mates/mate-ranchero-algarrobo.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "2",
+    "categoria": "mates",
+    "nombre": "Mate Imperial de Calabaza Animal Print",
+    "precio": 40000,
+    "descripcion_corta": "Mate imperial de calabaza con funda animal print y virola plateada.",
+    "descripcion_larga": "Calabaza imperial forrada en cuero animal print con base de patas y virola grabada plateada. Un clásico con personalidad.",
+    "imagen": "mates/mate-imperial-animal-print.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "3",
+    "categoria": "mates",
+    "nombre": "Mate Imperial de Calabaza 100% de Cuero",
+    "precio": 30000,
+    "descripcion_corta": "Mate imperial de calabaza 100% forrado en cuero negro.",
+    "descripcion_larga": "Calabaza imperial revestida completamente en cuero genuino negro con virola plateada grabada y base de patas.",
+    "imagen": "mates/mate-imperial-cuero-negro.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "4",
+    "categoria": "mates",
+    "nombre": "Mate Imperial de Cuero Croco",
+    "precio": 40000,
+    "descripcion_corta": "Mate imperial con textura de cuero croco y virola grabada.",
+    "descripcion_larga": "Calabaza imperial forrada en cuero texturado símil croco, virola plateada grabada y base de patas.",
+    "imagen": "mates/mate-imperial-croco.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "5",
+    "categoria": "mates",
+    "nombre": "Camionero de Algarrobo",
+    "precio": 30000,
+    "descripcion_corta": "Mate camionero de algarrobo con virola de acero.",
+    "descripcion_larga": "Mate camionero tallado en algarrobo con virola de acero inoxidable. Ideal para el uso diario.",
+    "imagen": "mates/mate-camionero-algarrobo.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "6",
+    "categoria": "bombillas",
+    "nombre": "Bombillón de Alpaca Pico de Loro",
+    "precio": 30000,
+    "descripcion_corta": "Bombillón de alpaca torneada con pico de loro.",
+    "descripcion_larga": "Bombillón de alpaca con cuerpo torneado a mano y pico de loro. Terminación premium.",
+    "imagen": "bombillas/bombillon-alpaca-pico-loro.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "7",
+    "categoria": "bombillas",
+    "nombre": "Bombillón de Alpaca Premium Pico Recto",
+    "precio": 30000,
+    "descripcion_corta": "Bombillón de alpaca premium con pico recto y trenzado.",
+    "descripcion_larga": "Bombillón de alpaca con detalle trenzado y pico recto. Pieza premium de colección.",
+    "imagen": "bombillas/bombillon-alpaca-premium.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "8",
+    "categoria": "bombillas",
+    "nombre": "Bombilla Chata con Dije de Bronce",
+    "precio": 7000,
+    "descripcion_corta": "Bombilla chata clásica con dije de bronce.",
+    "descripcion_larga": "Bombilla de caño chato con dije decorativo de bronce. Ideal como opción de entrada.",
+    "imagen": "bombillas/bombilla-chata-dije-bronce.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "9",
+    "categoria": "bombillas",
+    "nombre": "Bombilla de Caño Liso Pico de Loro",
+    "precio": 8500,
+    "descripcion_corta": "Bombilla de caño liso con pico de loro.",
+    "descripcion_larga": "Bombilla de caño liso dorado con pico de loro y filtro perforado.",
+    "imagen": "bombillas/bombilla-cano-liso-pico-loro.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "10",
+    "categoria": "bombillas",
+    "nombre": "Bombilla de Acero Inoxidable Pico de Loro",
+    "precio": 7500,
+    "descripcion_corta": "Bombilla de acero inoxidable con pico de loro.",
+    "descripcion_larga": "Bombilla de acero inoxidable, resistente y fácil de limpiar, con pico de loro clásico.",
+    "imagen": "bombillas/bombilla-acero-pico-loro.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "11",
+    "categoria": "canastas",
+    "nombre": "Canasta de Cuerina",
+    "precio": 20000,
+    "descripcion_corta": "Canasta matera de cuerina con asas reforzadas.",
+    "descripcion_larga": "Canasta compacta de cuerina para llevar el mate a cualquier lado, con asas reforzadas.",
+    "imagen": "canastas/canasta-cuerina.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "12",
+    "categoria": "canastas",
+    "nombre": "Canasta de Cuero Reforzada",
+    "precio": 40000,
+    "descripcion_corta": "Canasta matera de cuero genuino reforzado.",
+    "descripcion_larga": "Canasta de cuero genuino con costura reforzada y asas dobles. La más resistente de la línea.",
+    "imagen": "canastas/canasta-cuero-reforzada.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "13",
+    "categoria": "canastas",
+    "nombre": "Canasta para el Auto",
+    "precio": 10000,
+    "descripcion_corta": "Canasta compacta pensada para llevar en el auto.",
+    "descripcion_larga": "Canasta chica de cuero, ideal para tener el mate siempre a mano en el auto.",
+    "imagen": "canastas/canasta-auto.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "14",
+    "categoria": "canastas",
+    "nombre": "Media Canasta de Cuero Reforzado",
+    "precio": 30000,
+    "descripcion_corta": "Media canasta de cuero reforzado, formato compacto.",
+    "descripcion_larga": "Versión compacta de la canasta de cuero reforzado, con asa y broche metálico.",
+    "imagen": "canastas/media-canasta-cuero.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "15",
+    "categoria": "termos",
+    "nombre": "Termo Luminox Premium",
+    "precio": 60000,
+    "descripcion_corta": "Termo Luminox premium de 1 litro, alta gama.",
+    "descripcion_larga": "Termo Luminox de 1 litro, tecnología premium de conservación de temperatura. Línea alta gama.",
+    "imagen": "termos/termo-luminox-premium.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "16",
+    "categoria": "termos",
+    "nombre": "Termo Pico System Pico Cebador",
+    "precio": 30000,
+    "descripcion_corta": "Termo con sistema de pico cebador y vaso incluido.",
+    "descripcion_larga": "Termo con sistema de pico cebador para cebar sin destapar, incluye vaso y funda.",
+    "imagen": "termos/termo-pico-system.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "17",
+    "categoria": "termos",
+    "nombre": "Termo Media Manija Plateado Pico Cebador",
+    "precio": 25000,
+    "descripcion_corta": "Termo media manija plateado con pico cebador.",
+    "descripcion_larga": "Termo de media manija en acabado plateado, con pico cebador y clip de sujeción.",
+    "imagen": "termos/termo-media-manija-plateado.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "18",
+    "categoria": "termos",
+    "nombre": "Termo Media Manija Black Pico Cebador",
+    "precio": 25000,
+    "descripcion_corta": "Termo media manija negro con pico cebador.",
+    "descripcion_larga": "Termo de media manija en acabado negro mate, con pico cebador y clip de sujeción.",
+    "imagen": "termos/termo-media-manija-black.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "19",
+    "categoria": "yerba",
+    "nombre": "Yerba Reí Verde Premium",
+    "precio": 8000,
+    "descripcion_corta": "Yerba premium Reí Verde, disponible en 500gr y 1kg.",
+    "descripcion_larga": "Yerba mate premium línea export Reí Verde. Sabor suave y parejo.",
+    "imagen": "yerba/yerba-rei-verde.jpg",
+    "disponible": true,
+    "variantes": [
+      {
+        "nombre": "500gr",
+        "precio": 8000
+      },
+      {
+        "nombre": "1kg",
+        "precio": 12000
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "categoria": "yerba",
+    "nombre": "Yerba Esmeralda",
+    "precio": 8000,
+    "descripcion_corta": "Yerba Esmeralda sin agregado de azúcar, 500gr y 1kg.",
+    "descripcion_larga": "Yerba mate Esmeralda super extra tipo P.U.1, sin agregado de azúcar.",
+    "imagen": "yerba/yerba-esmeralda.jpg",
+    "disponible": true,
+    "variantes": [
+      {
+        "nombre": "500gr",
+        "precio": 8000
+      },
+      {
+        "nombre": "1kg",
+        "precio": 15000
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "categoria": "yerba",
+    "nombre": "Yerba Sara Tradicional 1kg",
+    "precio": 15000,
+    "descripcion_corta": "Yerba Sara tradicional, paquete de 1kg.",
+    "descripcion_larga": "Yerba mate Sara tradicional, elaborada, paquete de 1kg.",
+    "imagen": "yerba/yerba-sara.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "22",
+    "categoria": "yerba",
+    "nombre": "Yerba Baldo",
+    "precio": 8000,
+    "descripcion_corta": "Yerba Baldo, disponible en 500gr y 1kg.",
+    "descripcion_larga": "Yerba mate Baldo, clásica y de consumo masivo en Argentina.",
+    "imagen": "yerba/yerba-baldo.jpg",
+    "disponible": true,
+    "variantes": [
+      {
+        "nombre": "500gr",
+        "precio": 8000
+      },
+      {
+        "nombre": "1kg",
+        "precio": 12000
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "categoria": "yerba",
+    "nombre": "Yerba Mate Barão",
+    "precio": 7000,
+    "descripcion_corta": "Yerba Barão tipo Uruguay, disponible en 500gr y 1kg.",
+    "descripcion_larga": "Erva-mate Barão de Cotegipe, tipo Uruguay, ideal para quienes buscan un sabor distinto.",
+    "imagen": "yerba/yerba-barao.jpg",
+    "disponible": true,
+    "variantes": [
+      {
+        "nombre": "500gr",
+        "precio": 7000
+      },
+      {
+        "nombre": "1kg",
+        "precio": 10000
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "categoria": "yerba",
+    "nombre": "Yerba Verdecita",
+    "precio": 6000,
+    "descripcion_corta": "Yerba Verdecita, disponible en 500gr y 1kg.",
+    "descripcion_larga": "Yerba mate Verdecita, selección especial, buena relación precio-calidad.",
+    "imagen": "yerba/yerba-verdecita.jpg",
+    "disponible": true,
+    "variantes": [
+      {
+        "nombre": "500gr",
+        "precio": 6000
+      },
+      {
+        "nombre": "1kg",
+        "precio": 10000
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "categoria": "accesorios",
+    "nombre": "Cosito para el Mate",
+    "precio": 12000,
+    "descripcion_corta": "Accesorio de acero para limpiar el mate.",
+    "descripcion_larga": "Accesorio de acero para remover y limpiar la yerba usada del mate.",
+    "imagen": "accesorios/cosito-mate.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "26",
+    "categoria": "accesorios",
+    "nombre": "Caja de Presentación para Bombilla",
+    "precio": 8000,
+    "descripcion_corta": "Caja de regalo para bombilla.",
+    "descripcion_larga": "Estuche de presentación premium pensado para regalar una bombilla.",
+    "imagen": "accesorios/caja-bombilla.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "27",
+    "categoria": "accesorios",
+    "nombre": "Caja de Presentación para Mate y Bombilla",
+    "precio": 12000,
+    "descripcion_corta": "Caja de regalo para mate y bombilla juntos.",
+    "descripcion_larga": "Estuche de presentación premium para regalar el set completo de mate y bombilla.",
+    "imagen": "accesorios/caja-mate-bombilla.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "28",
+    "categoria": "accesorios",
+    "nombre": "Juego de 12 Cubiertos",
+    "precio": 65000,
+    "descripcion_corta": "Juego de 12 cubiertos para asado, línea Barbacoa.",
+    "descripcion_larga": "Set de 12 cubiertos con mango de asta para asado, ideal para acompañar el ritual matero y de fogón.",
+    "imagen": "accesorios/juego-cubiertos.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "29",
+    "categoria": "accesorios",
+    "nombre": "Kit Matero (Tapa Mate y Bombilla)",
+    "precio": 12500,
+    "descripcion_corta": "Kit con tapa para mate y funda para bombilla.",
+    "descripcion_larga": "Kit práctico con tapa para el mate y funda protectora para la bombilla.",
+    "imagen": "accesorios/kit-matero.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "30",
+    "categoria": "accesorios",
+    "nombre": "Chunas de Cuero con Cierre",
+    "precio": 12000,
+    "descripcion_corta": "Chuna de cuero con cierre e interior plastificado.",
+    "descripcion_larga": "Chuna de cuero con cierre, interior forrado y plastificado, para guardar la yerba prolija y seca.",
+    "imagen": "accesorios/chunas-cuero.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "31",
+    "categoria": "accesorios",
+    "nombre": "Latas Plateadas Yerbero y Azucarero",
+    "precio": 10000,
+    "descripcion_corta": "Set de latas plateadas para yerba y azúcar.",
+    "descripcion_larga": "Set de dos latas plateadas estilo tambor, una para yerba y otra para azúcar.",
+    "imagen": "accesorios/latas-plateadas.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "32",
+    "categoria": "accesorios",
+    "nombre": "Lata de Baldo Yerbera",
+    "precio": 25000,
+    "descripcion_corta": "Lata yerbera de colección Baldo.",
+    "descripcion_larga": "Set de latas yerberas de colección con estética Baldo, ideal como regalo o pieza de mesa.",
+    "imagen": "accesorios/lata-baldo.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "33",
+    "categoria": "accesorios",
+    "nombre": "Latas Forradas Negras Yerbero y Azucarero",
+    "precio": 10000,
+    "descripcion_corta": "Set de latas negras forradas para yerba y azúcar.",
+    "descripcion_larga": "Set de dos latas forradas en negro mate, una para yerba y otra para azúcar.",
+    "imagen": "accesorios/latas-negras.jpg",
+    "disponible": true,
+    "variantes": []
+  },
+  {
+    "id": "34",
+    "categoria": "accesorios",
+    "nombre": "Combo Imperial de Cuero + Bombilla + Grabado Personalizado",
+    "precio": 40000,
+    "descripcion_corta": "Combo mate imperial de cuero + bombilla de acero + grabado a elección.",
+    "descripcion_larga": "Combo compuesto por mate imperial de cuero, bombilla de acero inoxidable y grabado personalizado a elección del cliente.",
+    "imagen": "accesorios/combo-imperial-grabado.jpg",
+    "disponible": true,
+    "variantes": []
+  }
+]

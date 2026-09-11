@@ -1,0 +1,13 @@
+{
+  "name": "El Buen Cebar",
+  "short_name": "El Buen Cebar",
+  "description": "Vitrina digital de mates, bombillas, yerba y accesorios. Ritual matero, bien elegido.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F2EB",
+  "theme_color": "#1E2D24",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
