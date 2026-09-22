@@ -13,8 +13,9 @@ export function buildWhatsAppCartMessage(cartItems) {
 
   let total = 0;
   cartItems.forEach((item) => {
-    const unitPrice = item.variante ? item.variante.precio : item.precioUnitario;
-    const subtotal = unitPrice * item.cantidad;
+    // precioUnitario ya es el precio vigente (con descuento aplicado si
+    // corresponde) — se fija al agregar el item al carrito.
+    const subtotal = item.precioUnitario * item.cantidad;
     total += subtotal;
     const variantLabel = item.variante ? ` (${item.variante.nombre})` : "";
     lines.push(

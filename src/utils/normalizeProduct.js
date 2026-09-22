@@ -17,6 +17,20 @@ export function parseVariantes(raw) {
     .filter((v) => v.nombre);
 }
 
+// La columna "descuento" acepta el mismo formato "nombre:precio|..." que
+// "variantes" (descuento por variante), o un número simple (precio final
+// plano, aplica a cualquier variante elegida o al producto sin variantes).
+export function parseDescuento(raw) {
+  const value = (raw ?? "").toString().trim();
+  if (!value) return null;
+  if (value.includes(":")) {
+    const parsed = parseVariantes(value);
+    return parsed.length > 0 ? parsed : null;
+  }
+  const n = Number(value.replace(",", "."));
+  return Number.isFinite(n) ? n : null;
+}
+
 export function normalizeRow(row) {
   const id = (row.id ?? "").toString().trim();
   const categoria = (row.categoria ?? "").toString().trim().toLowerCase();
@@ -32,6 +46,11 @@ export function normalizeRow(row) {
   const disponible =
     typeof row.disponible === "boolean" ? row.disponible : disponibleRaw === "SI";
 
+  const descuento =
+    typeof row.descuento === "number" || Array.isArray(row.descuento)
+      ? row.descuento
+      : parseDescuento(row.descuento);
+
   return {
     id,
     categoria,
@@ -42,6 +61,7 @@ export function normalizeRow(row) {
     imagen: (row.imagen ?? "").toString().trim(),
     disponible,
     variantes,
+    descuento,
   };
 }
 

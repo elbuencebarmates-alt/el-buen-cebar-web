@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useCart } from "../context/CartContext";
 import { useProductModal } from "../context/ProductModalContext";
 import { formatPrice } from "../utils/format";
+import { getUnitPricing } from "../utils/pricing";
 import ProductImage from "./ProductImage";
 import PaymentShippingInfo from "./PaymentShippingInfo";
 import { CloseIcon, MinusIcon, PlusIcon } from "./icons";
@@ -34,7 +35,7 @@ export default function ProductModal() {
 
   if (!product) return null;
 
-  const unitPrice = variante ? variante.precio : product.precio;
+  const pricing = getUnitPricing(product, variante);
 
   const handleAdd = () => {
     if (!product.disponible) return;
@@ -91,6 +92,7 @@ export default function ProductModal() {
               <div className="flex flex-wrap gap-2">
                 {product.variantes.map((v) => {
                   const active = variante?.nombre === v.nombre;
+                  const vPricing = getUnitPricing(product, v);
                   return (
                     <button
                       key={v.nombre}
@@ -102,7 +104,17 @@ export default function ProductModal() {
                           : "border-forest/15 text-forest/70 hover:border-gold hover:text-gold-dark"
                       }`}
                     >
-                      {v.nombre} · {formatPrice(v.precio)}
+                      {v.nombre} ·{" "}
+                      {vPricing.hasDiscount ? (
+                        <>
+                          <span className="opacity-60 line-through">
+                            {formatPrice(vPricing.original)}
+                          </span>{" "}
+                          {formatPrice(vPricing.price)}
+                        </>
+                      ) : (
+                        formatPrice(vPricing.price)
+                      )}
                     </button>
                   );
                 })}
@@ -110,9 +122,20 @@ export default function ProductModal() {
             </div>
           )}
 
-          <p className="mt-5 font-serif text-2xl font-semibold text-gold-dark">
-            {formatPrice(unitPrice)}
-          </p>
+          {pricing.hasDiscount ? (
+            <p className="mt-5 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="text-lg text-forest/40 line-through">
+                {formatPrice(pricing.original)}
+              </span>
+              <span className="font-serif text-2xl font-semibold text-gold-dark">
+                {formatPrice(pricing.price)}
+              </span>
+            </p>
+          ) : (
+            <p className="mt-5 font-serif text-2xl font-semibold text-gold-dark">
+              {formatPrice(pricing.price)}
+            </p>
+          )}
 
           <div className="mt-4 flex items-center gap-3">
             <span className="text-sm font-medium text-forest/60">Cantidad</span>

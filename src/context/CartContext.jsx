@@ -1,4 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { getUnitPricing } from "../utils/pricing";
 
 const CartContext = createContext(null);
 const STORAGE_KEY = "elbuencebar_cart";
@@ -33,7 +34,7 @@ export function CartProvider({ children }) {
 
   const addItem = useCallback((product, variante = null, cantidad = 1) => {
     const key = itemKey(product.id, variante?.nombre);
-    const precioUnitario = variante ? variante.precio : product.precio;
+    const { price: precioUnitario } = getUnitPricing(product, variante);
 
     setItems((prev) => {
       const existing = prev.find((it) => it.key === key);

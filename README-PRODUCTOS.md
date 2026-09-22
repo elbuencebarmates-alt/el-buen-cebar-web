@@ -27,7 +27,7 @@ tanto en tanto).
    minúscula, sin espacios, en este orden):
 
    ```
-   id | categoria | nombre | precio | descripcion_corta | descripcion_larga | imagen | disponible | variantes
+   id | categoria | nombre | precio | descripcion_corta | descripcion_larga | imagen | disponible | variantes | descuento
    ```
 
 3. Cargá tus productos, una fila por producto. Mirá la sección "3. Cómo
@@ -57,6 +57,7 @@ tanto en tanto).
 | `imagen` | El nombre del archivo de la foto (ver sección 4) | `mates/mate-torpedo.jpg` |
 | `disponible` | `SI` si hay stock, `NO` si está agotado (igual se sigue mostrando en el sitio, pero con el cartel "Agotado" y sin poder agregarlo al carrito) | `SI` |
 | `variantes` | Vacío si el producto no tiene opciones. Ver sección 5 si tiene. | *(vacío)* |
+| `descuento` | Vacío si el producto no está en oferta. Ver sección 6 si querés ponerle un precio de descuento. | *(vacío)* |
 
 ### Cosas importantes para no romper nada
 
@@ -118,7 +119,50 @@ van a reflejar la opción elegida automáticamente.
 
 ---
 
-## 6. Tareas comunes, paso a paso
+## 6. Poner un producto en oferta (descuento)
+
+Para poner un producto en oferta, **escribí el precio nuevo (ya rebajado) en
+la columna `descuento`**. Para sacar la oferta, **borrá el valor de esa
+celda** y el producto vuelve a mostrarse con su precio normal — no hace
+falta tocar nada más.
+
+- Cuando `descuento` tiene un valor, en el sitio se ve el precio de lista
+  tachado al lado del precio nuevo, destacado en dorado. El carrito y el
+  mensaje de WhatsApp siempre usan el precio con descuento.
+- El valor de `descuento` tiene que ser **menor** al de la columna `precio`.
+  Si por error cargás un "descuento" igual o mayor al precio normal, el
+  sitio lo ignora y muestra el precio de siempre (para no mostrar una
+  "oferta" que en realidad sale más cara).
+
+**Producto sin variantes** — un solo número, igual que en `precio`:
+
+```
+descuento: 25000
+```
+
+**Producto con variantes** (como la Yerba) — incluí una de estas dos formas:
+
+- Un descuento distinto por variante, con el mismo formato que usás en
+  `variantes` (`nombre:precio|nombre:precio`):
+
+  ```
+  descuento: 500gr:6000|1kg:9000
+  ```
+
+- O un solo número si el descuento es el mismo precio final sin importar qué
+  variante se elija:
+
+  ```
+  descuento: 6000
+  ```
+
+No hace falta poner descuento en todas las variantes: si dejás una sin
+descuento en el detalle por variante, esa se sigue vendiendo a precio
+normal y las demás sí muestran la oferta.
+
+---
+
+## 7. Tareas comunes, paso a paso
 
 ### Agregar un producto nuevo
 1. Andá al final de la planilla y agregá una fila nueva.
@@ -144,6 +188,12 @@ van a reflejar la opción elegida automáticamente.
 1. Buscá el producto en la planilla.
 2. Editá la columna `variantes` siguiendo el formato de la sección 5.
 
+### Poner o sacar una oferta
+1. Buscá el producto en la planilla.
+2. Para poner en oferta: escribí el precio rebajado en la columna
+   `descuento` (ver sección 6 para el formato con variantes).
+3. Para sacar la oferta: borrá el valor de esa celda, dejala vacía.
+
 ### Volver a publicar el Sheet (por si algo dejó de funcionar)
 1. Archivo → Compartir → Publicar en la web.
 2. Si ya estaba publicado, vas a ver la opción de dejarlo como está o
@@ -152,7 +202,7 @@ van a reflejar la opción elegida automáticamente.
 
 ---
 
-## 7. Sobre las políticas legales y las cookies
+## 8. Sobre las políticas legales y las cookies
 
 El sitio tiene 3 páginas legales (Privacidad, Términos y Condiciones,
 Cookies) enlazadas desde el pie de página. Por ahora **no usamos ningún
@@ -171,7 +221,7 @@ técnico.
 
 ---
 
-## 8. ¿Algo no se ve como esperabas?
+## 9. ¿Algo no se ve como esperabas?
 
 - Si un producto no aparece: revisá que la columna `categoria` tenga
   exactamente una de las 6 palabras permitidas, en minúscula.
@@ -179,5 +229,8 @@ técnico.
   números, sin el signo `$` ni puntos.
 - Si una variante no aparece: revisá el formato exacto de la sección 5
   (dos puntos entre nombre y precio, barra vertical entre opciones).
+- Si cargaste un `descuento` y no se ve la oferta: revisá que el número sea
+  **menor** al de `precio` (o al de esa variante), y que el formato por
+  variante sea igual al de la sección 6.
 - Si nada de esto funciona, escribile a quien mantiene el sitio pasándole el
   link de la planilla publicada.

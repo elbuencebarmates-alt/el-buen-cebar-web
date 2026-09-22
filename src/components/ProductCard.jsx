@@ -1,12 +1,14 @@
 import { useCart } from "../context/CartContext";
 import { useProductModal } from "../context/ProductModalContext";
-import { priceRangeLabel } from "../utils/format";
+import { rangeLabel } from "../utils/format";
+import { getCardPricing } from "../utils/pricing";
 import ProductImage from "./ProductImage";
 
 export default function ProductCard({ product, index = 0 }) {
   const { addItem } = useCart();
   const { openProduct } = useProductModal();
   const hasVariants = product.variantes.length > 0;
+  const pricing = getCardPricing(product);
 
   const handleQuickAdd = (e) => {
     e.stopPropagation();
@@ -39,6 +41,11 @@ export default function ProductCard({ product, index = 0 }) {
             Agotado
           </span>
         )}
+        {pricing.hasDiscount && (
+          <span className="absolute right-3 top-3 rounded-full bg-gold px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-forest-dark">
+            Oferta
+          </span>
+        )}
       </button>
 
       <div className="flex flex-1 flex-col gap-2 p-4">
@@ -48,9 +55,18 @@ export default function ProductCard({ product, index = 0 }) {
         <p className="line-clamp-2 flex-1 text-sm text-forest/60">
           {product.descripcion_corta}
         </p>
-        <p className="font-serif text-lg font-semibold text-gold-dark">
-          {priceRangeLabel(product)}
-        </p>
+        {pricing.hasDiscount ? (
+          <p className="flex flex-wrap items-baseline gap-x-2 font-serif text-lg font-semibold text-gold-dark">
+            <span className="text-sm font-normal text-forest/40 line-through">
+              {rangeLabel(pricing.originalMin, pricing.originalMax)}
+            </span>
+            <span>{rangeLabel(pricing.priceMin, pricing.priceMax)}</span>
+          </p>
+        ) : (
+          <p className="font-serif text-lg font-semibold text-gold-dark">
+            {rangeLabel(pricing.priceMin, pricing.priceMax)}
+          </p>
+        )}
 
         <div className="mt-1 flex items-center gap-2">
           <button

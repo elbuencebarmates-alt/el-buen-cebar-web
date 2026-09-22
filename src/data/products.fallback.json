@@ -8,7 +8,8 @@
     "descripcion_larga": "Mate tallado en algarrobo macizo con guarda de cuero bicolor blanco y marrón. Pieza única de estilo rústico.",
     "imagen": "mates/mate-ranchero-algarrobo.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "2",
@@ -19,7 +20,8 @@
     "descripcion_larga": "Calabaza imperial forrada en cuero animal print con base de patas y virola grabada plateada. Un clásico con personalidad.",
     "imagen": "mates/mate-imperial-animal-print.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "3",
@@ -30,7 +32,8 @@
     "descripcion_larga": "Calabaza imperial revestida completamente en cuero genuino negro con virola plateada grabada y base de patas.",
     "imagen": "mates/mate-imperial-cuero-negro.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "4",
@@ -41,7 +44,8 @@
     "descripcion_larga": "Calabaza imperial forrada en cuero texturado símil croco, virola plateada grabada y base de patas.",
     "imagen": "mates/mate-imperial-croco.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "5",
@@ -52,7 +56,8 @@
     "descripcion_larga": "Mate camionero tallado en algarrobo con virola de acero inoxidable. Ideal para el uso diario.",
     "imagen": "mates/mate-camionero-algarrobo.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "6",
@@ -63,7 +68,8 @@
     "descripcion_larga": "Bombillón de alpaca con cuerpo torneado a mano y pico de loro. Terminación premium.",
     "imagen": "bombillas/bombillon-alpaca-pico-loro.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "7",
@@ -74,7 +80,8 @@
     "descripcion_larga": "Bombillón de alpaca con detalle trenzado y pico recto. Pieza premium de colección.",
     "imagen": "bombillas/bombillon-alpaca-premium.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "8",
@@ -85,7 +92,8 @@
     "descripcion_larga": "Bombilla de caño chato con dije decorativo de bronce. Ideal como opción de entrada.",
     "imagen": "bombillas/bombilla-chata-dije-bronce.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "9",
@@ -96,7 +104,8 @@
     "descripcion_larga": "Bombilla de caño liso dorado con pico de loro y filtro perforado.",
     "imagen": "bombillas/bombilla-cano-liso-pico-loro.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "10",
@@ -107,7 +116,8 @@
     "descripcion_larga": "Bombilla de acero inoxidable, resistente y fácil de limpiar, con pico de loro clásico.",
     "imagen": "bombillas/bombilla-acero-pico-loro.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "11",
@@ -118,7 +128,8 @@
     "descripcion_larga": "Canasta compacta de cuerina para llevar el mate a cualquier lado, con asas reforzadas.",
     "imagen": "canastas/canasta-cuerina.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "12",
@@ -129,7 +140,8 @@
     "descripcion_larga": "Canasta de cuero genuino con costura reforzada y asas dobles. La más resistente de la línea.",
     "imagen": "canastas/canasta-cuero-reforzada.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "13",
@@ -140,7 +152,8 @@
     "descripcion_larga": "Canasta chica de cuero, ideal para tener el mate siempre a mano en el auto.",
     "imagen": "canastas/canasta-auto.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "14",
@@ -151,7 +164,8 @@
     "descripcion_larga": "Versión compacta de la canasta de cuero reforzado, con asa y broche metálico.",
     "imagen": "canastas/media-canasta-cuero.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "15",
@@ -162,7 +176,8 @@
     "descripcion_larga": "Termo Luminox de 1 litro, tecnología premium de conservación de temperatura. Línea alta gama.",
     "imagen": "termos/termo-luminox-premium.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "16",
@@ -173,7 +188,8 @@
     "descripcion_larga": "Termo con sistema de pico cebador para cebar sin destapar, incluye vaso y funda.",
     "imagen": "termos/termo-pico-system.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "17",
@@ -184,7 +200,8 @@
     "descripcion_larga": "Termo de media manija en acabado plateado, con pico cebador y clip de sujeción.",
     "imagen": "termos/termo-media-manija-plateado.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "18",
@@ -195,7 +212,8 @@
     "descripcion_larga": "Termo de media manija en acabado negro mate, con pico cebador y clip de sujeción.",
     "imagen": "termos/termo-media-manija-black.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "19",
@@ -215,7 +233,8 @@
         "nombre": "1kg",
         "precio": 12000
       }
-    ]
+    ],
+    "descuento": null
   },
   {
     "id": "20",
@@ -235,7 +254,8 @@
         "nombre": "1kg",
         "precio": 15000
       }
-    ]
+    ],
+    "descuento": null
   },
   {
     "id": "21",
@@ -246,7 +266,8 @@
     "descripcion_larga": "Yerba mate Sara tradicional, elaborada, paquete de 1kg.",
     "imagen": "yerba/yerba-sara.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "22",
@@ -266,7 +287,8 @@
         "nombre": "1kg",
         "precio": 12000
       }
-    ]
+    ],
+    "descuento": null
   },
   {
     "id": "23",
@@ -286,7 +308,8 @@
         "nombre": "1kg",
         "precio": 10000
       }
-    ]
+    ],
+    "descuento": null
   },
   {
     "id": "24",
@@ -306,7 +329,8 @@
         "nombre": "1kg",
         "precio": 10000
       }
-    ]
+    ],
+    "descuento": null
   },
   {
     "id": "25",
@@ -317,7 +341,8 @@
     "descripcion_larga": "Accesorio de acero para remover y limpiar la yerba usada del mate.",
     "imagen": "accesorios/cosito-mate.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "26",
@@ -328,7 +353,8 @@
     "descripcion_larga": "Estuche de presentación premium pensado para regalar una bombilla.",
     "imagen": "accesorios/caja-bombilla.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "27",
@@ -339,7 +365,8 @@
     "descripcion_larga": "Estuche de presentación premium para regalar el set completo de mate y bombilla.",
     "imagen": "accesorios/caja-mate-bombilla.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "28",
@@ -350,7 +377,8 @@
     "descripcion_larga": "Set de 12 cubiertos con mango de asta para asado, ideal para acompañar el ritual matero y de fogón.",
     "imagen": "accesorios/juego-cubiertos.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "29",
@@ -361,7 +389,8 @@
     "descripcion_larga": "Kit práctico con tapa para el mate y funda protectora para la bombilla.",
     "imagen": "accesorios/kit-matero.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "30",
@@ -372,7 +401,8 @@
     "descripcion_larga": "Chuna de cuero con cierre, interior forrado y plastificado, para guardar la yerba prolija y seca.",
     "imagen": "accesorios/chunas-cuero.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "31",
@@ -383,7 +413,8 @@
     "descripcion_larga": "Set de dos latas plateadas estilo tambor, una para yerba y otra para azúcar.",
     "imagen": "accesorios/latas-plateadas.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "32",
@@ -394,7 +425,8 @@
     "descripcion_larga": "Set de latas yerberas de colección con estética Baldo, ideal como regalo o pieza de mesa.",
     "imagen": "accesorios/lata-baldo.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "33",
@@ -405,7 +437,8 @@
     "descripcion_larga": "Set de dos latas forradas en negro mate, una para yerba y otra para azúcar.",
     "imagen": "accesorios/latas-negras.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   },
   {
     "id": "34",
@@ -416,6 +449,7 @@
     "descripcion_larga": "Combo compuesto por mate imperial de cuero, bombilla de acero inoxidable y grabado personalizado a elección del cliente.",
     "imagen": "accesorios/combo-imperial-grabado.jpg",
     "disponible": true,
-    "variantes": []
+    "variantes": [],
+    "descuento": null
   }
 ]
